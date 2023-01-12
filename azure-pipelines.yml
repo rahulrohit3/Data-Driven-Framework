@@ -1,4 +1,10 @@
 # Maven
+- task: mabl-azure-devops-extension@1
+  inputs:
+    apiKey: 'dX31Zr0YL6MM5upaCDwAlA'
+    applicationId: 'mD9Sc27RikI2tbhhaA9EFw-a'
+    environmentId: 'XNMUsR6YHZUjFkaojwIuSQ-e'
+    labels: 'qa'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
