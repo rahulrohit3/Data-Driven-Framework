@@ -1,32 +1,3 @@
-# Maven
-- task: mabl-azure-devops-extension@1
-  inputs:
-    apiKey: 'dX31Zr0YL6MM5upaCDwAlA'
-    applicationId: 'mD9Sc27RikI2tbhhaA9EFw-a'
-    environmentId: 'XNMUsR6YHZUjFkaojwIuSQ-e'
-    labels: 'qa'
-- task: mabl-azure-devops-extension@1
-  inputs:
-    rebaselineImages: true
-    setStaticBaseline: true
-# Build your Java project and run tests with Apache Maven.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/java
-
-trigger:
-- master
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
+              - name: Run mabl tests
+                uses: mablhq/github-run-tests-action@v1.13.0
+            
