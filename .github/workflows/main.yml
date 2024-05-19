@@ -17,5 +17,5 @@ jobs:
           MABL_API_KEY: ${{ secrets.MABL_API_KEY }}
         
         with:
-          application-id: uC7A2Ks4dhTqreQ1RfMONw-a
-          environment-id: CSuLYBOAJvcGJ4qpVlr8bA-e
+          application-id: DSBy5vtLA8KifGi1BUHkVQ-a
+          environment-id: TdVpX3UuuMdjL7oIrUpBpQ-e
